@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // Connect to MongoDB (change the connection URL to your MongoDB instance)
-mongoose.connect("mongodb://127.0.0.1:27017/ali_app", {
+mongoose.connect("mongodb+srv://zaktigantenk:ridwanachyar@cluster.1hxvuvd.mongodb.net/zaktigantenk?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
